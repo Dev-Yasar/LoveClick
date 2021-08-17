@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./src/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+.navbar {
+  position: fixed;
+  top: -10px;
+  left: 60px;
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+#logo {
+  width: 250px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar ul li a:hover {
+  color: red;
+}
+#menu-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: -0px;
+  z-index: 2;
+  box-shadow: 0 0.3px 10px;
+}
+
+#toggle {
+  display: none;
+}
+/*-------------------------text------------------------------*/
+#text-1 {
+  position: absolute;
+  top: 100px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 15px;
+}
+#text-1 h1 {
+  color: rgb(252, 74, 74);
+  font-size: 80px;
+}
+#text-1-1 {
+  font-size: 35px;
+}
+/*------------------------dream-------------------------------*/
+#ellipse-1 {
+  width: 40px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 1040px;
+  top: 250px;
+}
+#ellipse-2 {
+  width: 25px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  left: 1080px;
+  top: 290px;
+}
+#thooriga-v {
+  width: 320px;
+  height: 220px;
+  position: absolute;
+  left: 740px;
+  top: 80px;
+  mix-blend-mode: darken;
+  border-radius: 50%;
+}
+/*------------------------foreground-------------------------------*/
+#spiderman {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 130px;
+}
+/*------------------------button-------------------------------*/
+#circle {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 350px;
+  margin-left: 50px;
+}
+#icon {
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  top: 380px;
+  left: 90px;
+}
+#cute-boy {
+  display: none;
+}
+
+/*------------mediaqurey--------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  #toggle-div {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+  }
+  #toggle {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 35px;
+    height: 25px;
+    z-index: 3;
+  }
+  #mylinks {
+    display: block;
+    background-color: rgba(255, 253, 253, 0.884);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 1s;
+    left: 500px;
+    top: 60px;
+    z-index: 3;
+  }
+  #mylinks.active {
+    left: 0px;
+  }
+  #mobile-toggle {
+    width: 100%;
+    height: 300px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #cute-boy {
+    display: block;
+  }
+
+  body {
+    background-size: cover;
+  }
+
+  #spiderman {
+    top: 460px;
+  }
+
+  #text-1 h1 {
+    font-size: 50px;
+  }
+  #text-1-1 {
+    font-size: 20px;
+  }
+  #circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  #icon {
+    width: 20px;
+    height: 30px;
+    top: 375px;
+    left: 80px;
+  }
+  #btn {
+    position: absolute;
+    top: -220px;
+    left: 180px;
+  }
+
+  #dream {
+    position: absolute;
+    left: -700px;
+    top: 120px;
+  }
+  #thooriga-v {
+    width: 240px;
+    height: 140px;
+    left: 745px;
+    top: 180px;
+  }
+  #ellipse-1 {
+    width: 30px;
+    height: 8px;
+    left: 960px;
+    top: 310px;
+  }
+  #ellipse-2 {
+    width: 15px;
+    height: 6px;
+    left: 980px;
+    top: 340px;
+  }
+}

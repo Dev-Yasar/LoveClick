@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE CLICK</title>
+    <link rel="icon" href="./src/icon.png" type="image/png" sizes="16x16" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <img id="logo" src="./src/logo.png" alt="logo" />
+        <ul>
+          <div id="mylinks">
+            <div id="mobile-toggle">
+              <li><a href="./index.html" target="_self">Home</a></li>
+              <li><a href="./contact.html" target="_self">Contact</a></li>
+              <li><a href="./about.html" target="_self">About</a></li>
+            </div>
+            <img src="./src/cartoon-3.png" alt="cartoon-3" id="cute-boy" />
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div id="menu-bar"></div>
+    <div id="toggle-div">
+      <img
+        id="toggle"
+        src="./src/menu.png"
+        alt="toggle"
+        onclick="myfunction() "
+      />
+    </div>
+
+    <!------------------------------Text-------------------------------------------->
+    <div id="text-1">
+      <h1>PLAY</h1>
+      <p id="text-1-1">
+        THE SONG
+        <br />
+        TO FEEL
+        <br />
+        YOUR LOVE
+      </p>
+    </div>
+    <!--------------------------------Foreground------------------------------------------>
+
+    <img id="spiderman" src="./src/spider-man.png" alt="spiderman" />
+
+    <!----------------------------------dream---------------------------------------->
+    <div id="dream">
+      <div id="ellipse-1"></div>
+      <div id="ellipse-2"></div>
+      <video loop id="thooriga-v" src="./src/Thooriga.mp4" muted></video>
+    </div>
+    <!------------------------------------button-------------------------------------->
+    <div id="btn">
+      <div id="circle"></div>
+      <img
+        id="icon"
+        src="./src/play btn.png"
+        alt="play-btn"
+        onclick="playaudio()"
+        ,
+      />
+    </div>
+    <!---------------------------------------audio---------------------------------->
+    <audio id="thooriga-A">
+      <source src="./src/song.mp3" type="audio/mp3" />
+    </audio>
+
+    <!---------------------------------------scrpit---------------------------------->
+    <script>
+      var audio = document.getElementById("thooriga-A");
+      var video = document.getElementById("thooriga-v");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function () {
+        if (audio.paused) {
+          audio.play();
+          video.play();
+          icon.src = "./src/pause.png";
+        } else {
+          audio.pause();
+          video.pause();
+          icon.src = "./src/play btn.png";
+        }
+      };
+      function myfunction() {
+        document.getElementById("mylinks").classList.toggle("active");
+      }
+      myfunction();
+    </script>
+  </body>
+</html>

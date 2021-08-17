@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOVE CLICK</title>
+    <link rel="stylesheet" href="./about-style.css" />
+    <link rel="icon" href="./src/icon.png" type="image/png" sizes="16x16" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <img id="logo" src="./src/logo.png" alt="logo" />
+        <ul>
+          <div id="mylinks">
+            <div id="mobile-toggle">
+              <li><a href="./index.html" target="_self">Home</a></li>
+              <li><a href="./contact.html" target="_self">Contact</a></li>
+              <li><a href="./about.html" target="_self">About</a></li>
+            </div>
+            <img src="./src/cartoon-3.png" alt="cartoon-3" id="cute-boy" />
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div id="menu-bar"></div>
+    <div id="toggle-div">
+      <img
+        id="toggle"
+        src="./src/menu.png"
+        alt="toggle"
+        onclick="myfunction() "
+      />
+    </div>
+    <!--------------------------------Heading------------------------------------------>
+    <h1 id="about">ABOUT</h1>
+
+    <!------------------------------------circle-------------------------------------->
+    <div id="big-circle"></div>
+
+    <!------------------------------------cartoon-image-------------------------------->
+    <img id="cartoon-2" src="./src/cartoon-2.png" alt="cartoon_2" />
+
+    <!----------------------------------paragraph---------------------------------------->
+    <h1 id="sub-heading">Benefits Of Listening To Music</h1>
+    <p id="paragarah">
+      “If you want to keep your brain engaged throughout<br />
+      the aging process, listening to or playing music is a <br />
+      great tool. It provides a total brain workout.” <br />
+      Research has shown that listening to music can <br />
+      reduce anxiety, blood pressure, and pain as well as<br />
+      improve sleep quality, mood, mental alertness, and <br />
+      memory.
+    </p>
+
+    <script>
+      function myfunction() {
+        document.getElementById("mylinks").classList.toggle("active");
+      }
+      myfunction();
+    </script>
+  </body>
+</html>

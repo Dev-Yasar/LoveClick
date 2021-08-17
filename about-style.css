@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: -10px;
+  left: 60px;
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+#logo {
+  width: 250px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar ul li a:hover {
+  color: red;
+}
+#menu-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: -0px;
+  z-index: 2;
+  box-shadow: 0 0.3px 10px;
+}
+#toggle {
+  display: none;
+}
+/*------------------------Heading-------------------------------*/
+#about {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  font-family: sans-serif;
+}
+
+/*---------------------------circle----------------------------*/
+#big-circle {
+  width: 500px;
+  height: 500px;
+  background-color: #4d76ff;
+  border-radius: 50%;
+  position: absolute;
+  left: 780px;
+  top: 80px;
+}
+
+/*----------------------------cartoon-image---------------------------*/
+#cartoon-2 {
+  position: absolute;
+  left: 800px;
+  top: 124px;
+}
+
+/*----------------------------paragraph---------------------------*/
+#sub-heading {
+  position: absolute;
+  top: 250px;
+  left: 40px;
+  font-family: sans-serif;
+}
+#paragarah {
+  position: absolute;
+  top: 300px;
+  font-size: 34px;
+  left: 30px;
+}
+#cute-boy {
+  display: none;
+}
+/*=================================END=======================================*/
+
+/*------------mediaqurey--------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  /*------------------------Heading-------------------------------*/
+  #toggle-div {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+  }
+  #toggle {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 35px;
+    height: 25px;
+    z-index: 3;
+  }
+  #mylinks {
+    display: block;
+    background-color: rgba(255, 253, 253, 0.884);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 1s;
+    left: 500px;
+    top: 60px;
+    z-index: 3;
+  }
+  #mylinks.active {
+    left: 0px;
+  }
+  #mobile-toggle {
+    width: 100%;
+    height: 300px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #cute-boy {
+    display: block;
+  }
+
+  #about {
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    font-family: sans-serif;
+  }
+  /*---------------------------circle----------------------------*/
+  #big-circle {
+    width: 270px;
+    height: 270px;
+    left: 40px;
+    top: 80px;
+  }
+  /*----------------------------cartoon-image---------------------------*/
+  #cartoon-2 {
+    width: 250px;
+    height: 280px;
+    position: absolute;
+    left: 60px;
+    top: 100px;
+  }
+
+  /*----------------------------paragraph---------------------------*/
+  #sub-heading {
+    top: 470px;
+    left: 10px;
+    font-size: 20px;
+  }
+  #paragarah {
+    top: 500px;
+    font-size: 16px;
+    left: 10px;
+  }
+}

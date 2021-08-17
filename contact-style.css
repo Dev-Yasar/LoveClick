@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  top: -10px;
+  left: 60px;
+  width: 88%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+#logo {
+  width: 250px;
+  cursor: pointer;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.navbar ul li a:hover {
+  color: red;
+}
+#menu-bar {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  top: -0px;
+  z-index: 2;
+  box-shadow: 0 0.3px 10px;
+}
+#toggle {
+  display: none;
+}
+
+/*---------------------------Heading----------------------------*/
+#contact_us {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  font-family: sans-serif;
+}
+/*---------------------------Icons----------------------------*/
+#social_media-1 {
+  width: 900px;
+  position: absolute;
+  top: 250px;
+  left: -100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#social_media-2 {
+  width: 900px;
+  position: absolute;
+  top: 450px;
+  left: -100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media_size {
+  width: 100px;
+  height: 100px;
+}
+/*---------------------------cartoon-image----------------------------*/
+
+#cartoon-1 {
+  width: 440px;
+  height: 500px;
+  position: absolute;
+  left: 750px;
+  top: 120px;
+}
+#cute-boy {
+  display: none;
+}
+/*=================================END=======================================*/
+
+/*------------mediaqurey--------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  /*---------------------------Heading----------------------------*/
+  #toggle-div {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+  }
+  #toggle {
+    display: block;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 35px;
+    height: 25px;
+    z-index: 3;
+  }
+  #mylinks {
+    display: block;
+    background-color: rgba(255, 253, 253, 0.884);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    transition: 1s;
+    left: 500px;
+    top: 60px;
+    z-index: 3;
+  }
+  #mylinks.active {
+    left: 0px;
+  }
+  #mobile-toggle {
+    width: 100%;
+    height: 300px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #cute-boy {
+    display: block;
+  }
+
+  #contact_us {
+    top: 400px;
+    left: 90px;
+    font-size: 25px;
+  }
+
+  /*---------------------------Icons----------------------------*/
+  #social_media-1 {
+    width: 350px;
+    top: 470px;
+    left: 0px;
+  }
+  #social_media-2 {
+    width: 350px;
+    top: 560px;
+    left: 0px;
+  }
+  .social-media_size {
+    width: 50px;
+    height: 50px;
+  }
+
+  /*---------------------------cartoon-image----------------------------*/
+  #cartoon-1 {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    z-index: -1;
+  }
+}
